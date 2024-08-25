@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    transition: background-color 0.5s ease;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the logo and title */
+    font-size: 2em; /* Adjust as needed */
+    margin: 0;
+}
+
+.logo {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.music {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.track {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #fff;
+}
+
+.see-more {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.see-more a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-more a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Disco Light */
+.disco-light {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(circle, #fff, transparent);
+    opacity: 0.7;
+}
+
+@keyframes disco {
+    0% { background: radial-gradient(circle, #ff0000, transparent); }
+    20% { background: radial-gradient(circle, #00ff00, transparent); }
+    40% { background: radial-gradient(circle, #0000ff, transparent); }
+    60% { background: radial-gradient(circle, #ff00ff, transparent); }
+    80% { background: radial-gradient(circle, #00ffff, transparent); }
+    100% { background: radial-gradient(circle, #ffff00, transparent); }
+}
